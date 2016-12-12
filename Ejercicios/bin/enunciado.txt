@@ -1,0 +1,3 @@
+Crear una clase Persona con los atributos nombre y edad. La clase persona debe tener 2
+constructores: uno que reciba el nombre y la edad y otro que reciba el nombre y la fecha de
+nacimiento y que calcule la edad

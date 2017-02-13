@@ -1,0 +1,29 @@
+8.9) Sincronización ­ Escritor y múltiples lectores
+
+Imaginemos que tenemos un objeto que tiene información muy importante (un contador) y
+
+queremos que muchos threads sean capaces de leer (y mostrar en pantalla) y haya un thread
+
+que pueda escribir (incrementar).
+
+Queremos coordinar (sincronizar) los threads de tal manera que garantizar que mientras se
+
+escribe, nadie lo lea, pero permitir que varios threads lo lean al mismo tiempo. Se debe
+
+simular que se tarda un tiempo en leer
+
+Hacer un main que lance 5 threads lectores y 1 escritor, que espere un tiempo y luego
+
+termine (interrumpa) a todos los threads.
+
+Les paso unos consejos. Si se animan, arranquen sin leerlos. Si están muy perdidos, léanlo
+
+* Hagan que el tiempo entre lectura y lectura (de 10 a 50 ms) sea más cortos que entre
+
+escritura y escritura ( de 30 a 100 ms) para probar mejor
+
+* Tienen que usar 2 semaforos para sincronizar distintas variables (el contador de
+
+lectores leyendo y si el escritor está leyendo)
+
+* Es más fácil hacer la sincronización dentro del objeto "información" que en los threads
